@@ -1,0 +1,26 @@
+.shop-page { align-items: flex-start; }
+.shop-container { width: min(1150px, 100%); }
+.shop-container h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 12px 0; }
+.shop-container > p, .product-details p, .cart-product p { color: #b9c2d0; }
+.shop-container section { margin: 36px 0; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 20px; }
+.product-card { background: #141821; border: 1px solid #344156; border-radius: 16px; overflow: hidden; }
+.product-card img { width: 100%; height: 160px; object-fit: contain; background: #e9edf4; padding: 18px; box-sizing: border-box; }
+.product-details { padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+.product-details h3, .product-details p { margin: 0; min-height: 3em; }
+.product-details strong { font-size: 1.4rem; }
+.shop-container button { padding: 11px 16px; border-radius: 8px; border: 1px solid #657b98; background: #253c56; color: white; cursor: pointer; min-height: 44px; }
+.shop-container button:hover { background: #354e6e; }
+.shop-container a { color: #a6d3ff; }
+.cart-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; background: #a6d3ff; color: #11141b; font-weight: bold; }
+.cart-warning { color: #ffdfa3 !important; background: #362a17; border-left: 4px solid #ffcf78; padding: 14px; }
+.cart-rows { list-style: none; padding: 0; }
+.cart-row { display: flex; align-items: center; gap: 24px; padding: 24px; margin-bottom: 14px; background: #141821; border: 1px solid #344156; border-radius: 12px; flex-wrap: wrap; }
+.cart-product { flex: 1 1 240px; }
+.cart-product h2 { font-size: 1.2rem; margin: 0; }
+.quantity-controls { display: flex; align-items: flex-end; gap: 8px; }
+.quantity-controls label { display: flex; flex-direction: column; gap: 4px; font-size: .85rem; }
+.quantity-controls input { width: 70px; padding: 12px 8px; color: white; background: #0c0f15; border: 1px solid #657b98; border-radius: 8px; }
+.cart-total { display: flex; justify-content: space-between; font-size: 1.7rem; padding: 24px 0; border-top: 1px solid #657b98; margin-bottom: 16px; }
+.cart-empty { padding: 30px; border: 1px solid #344156; border-radius: 16px; }
+@media (max-width: 600px) { .cart-row { padding: 18px; gap: 16px; } .cart-product { flex-basis: 100%; } }
