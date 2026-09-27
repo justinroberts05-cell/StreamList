@@ -101,7 +101,9 @@ function StreamList({ items, setItems }) {
               ))}
             </ul>
           )}
-          <p className="list-note">Your list stays while navigating. Refreshing the page starts a new list.</p>
+          <p className="list-note">
+  Your StreamList is saved automatically on this device.
+</p>
         </section>
       </section>
     </main>

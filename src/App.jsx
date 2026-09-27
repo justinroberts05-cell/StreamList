@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Navigation from "./components/Navigation";
@@ -10,13 +10,33 @@ import About from "./pages/About";
 import "./App.css";
 
 function App() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(() => {
+    const savedItems = localStorage.getItem("streamListItems");
+
+    if (savedItems) {
+      try {
+        return JSON.parse(savedItems);
+      } catch {
+        return [];
+      }
+    }
+
+    return [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("streamListItems", JSON.stringify(items));
+  }, [items]);
+
   return (
     <>
       <Navigation />
 
       <Routes>
-        <Route path="/" element={<StreamList items={items} setItems={setItems} />} />
+        <Route
+          path="/"
+          element={<StreamList items={items} setItems={setItems} />}
+        />
         <Route path="/movies" element={<Movies />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/about" element={<About />} />
