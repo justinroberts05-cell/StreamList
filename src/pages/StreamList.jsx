@@ -1,7 +1,7 @@
 import { useState } from "react";
 import StreamForm from "../components/StreamForm";
 
-function StreamList({ items, setItems }) {
+function StreamList({ items, setItems, storageError }) {
   const [title, setTitle] = useState("");
   const [editingId, setEditingId] = useState(null);
   const [editText, setEditText] = useState("");
@@ -101,9 +101,10 @@ function StreamList({ items, setItems }) {
               ))}
             </ul>
           )}
+          {storageError && <p className="error-message" role="alert">{storageError}</p>}
           <p className="list-note">
-  Your StreamList is saved automatically on this device.
-</p>
+            {storageError ? "Your list is available during this visit." : "Your StreamList is saved automatically on this device."}
+          </p>
         </section>
       </section>
     </main>

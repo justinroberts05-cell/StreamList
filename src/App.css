@@ -287,3 +287,9 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 .error-message {
   margin: 20px 0;
 }
+/* Keep movie search usable at narrow screen widths. */
+.movie-search-form input { min-width: 0; }
+@media (max-width: 700px) {
+  .movie-search-form { flex-direction: column; }
+  .movie-grid { grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); }
+}
