@@ -5,7 +5,7 @@ const list = [
           service: "Basic Subscription",
           serviceInfo: "For one User",
           price: 4.99,
-          img: "https://creazilla-store.fra1.digitaloceanspaces.com/icons/3231802/ticket-icon-md.png",
+          img: "/images/basic.svg",
           amount: 1,
         },
         {
@@ -13,7 +13,7 @@ const list = [
           service: "Gold Subscription",
           serviceInfo: "Share with Family",
           price: 9.99,
-          img: "https://creazilla-store.fra1.digitaloceanspaces.com/icons/3237088/ticket-icon-md.png",
+          img: "/images/gold.svg",
           amount: 1,
         },
         {
@@ -21,7 +21,7 @@ const list = [
           service: "Premium Subscription",
           serviceInfo: "Share with the World",
           price: 12.99,
-          img: "https://creazilla-store.fra1.digitaloceanspaces.com/icons/3258730/ticket-icon-md.png",
+          img: "/images/premium.svg",
           amount: 1,
         },
         {
@@ -29,7 +29,7 @@ const list = [
           service: "Social Media Sharing Subscription",
           serviceInfo: "Share your list",
           price: 2.99,
-          img: "https://cdn.creazilla.com/photos/3730387/social-media-1908766_1280-photo-md.jpeg",
+          img: "/images/social.svg",
           amount: 1,
         },
         {
@@ -37,7 +37,7 @@ const list = [
           service: "EZ Tech T-Shirt",
           serviceInfo: "Show your List to the World!!!",
           price: 25.99,
-          img: "https://cdn.creazilla.com/cliparts/5548105/tie-dye-t-shirt-clipart-md.png",
+          img: "/images/shirt.svg",
           amount: 2000,
         },
         {
@@ -45,7 +45,7 @@ const list = [
           service: "EZ Techplosion",
           serviceInfo: "Share your List to all!!!",
           price: 25.99,
-          img: "https://cdn.creazilla.com/cliparts/7487471/tie-dye-t-shirt-clipart-md.png",
+          img: "/images/techplosion.svg",
           amount: 1400,
         },
         {
@@ -53,7 +53,7 @@ const list = [
           service: "EZ Techmerizing",
           serviceInfo: "Techmerize your friends",
           price: 25.99,
-          img: "https://cdn.creazilla.com/cliparts/5632313/tie-dye-t-shirt-clipart-sm.png",
+          img: "/images/techmerizing.svg",
           amount: 1090,
         },
         {
@@ -61,7 +61,7 @@ const list = [
           service: "EZ Tech Case",
           serviceInfo: "Mesmerize your friends",
           price: 20.99,
-          img: "https://cdn.creazilla.com/9ef436f9e9e4cf2733c43b7e61d327d2.jpeg",
+          img: "/images/case.svg",
           amount: 10090,
         },
       ];
