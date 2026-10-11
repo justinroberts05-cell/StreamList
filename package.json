@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "auth": "node server.mjs",
+    "start": "node server.mjs",
+    "test:security": "node --test security.test.mjs",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",

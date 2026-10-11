@@ -22,6 +22,7 @@ export default function Cart({ cart, onQuantity, onRemove }) {
         </li>;
       })}</ul>
       <div className="cart-total" aria-live="polite"><span>Total</span><strong>{money(total)}</strong></div>
+      <div className="checkout-actions"><Link className="checkout-link" to="/checkout">Checkout</Link></div>
       <Link to="/subscriptions">Continue shopping</Link>
     </>}
   </div></main>;

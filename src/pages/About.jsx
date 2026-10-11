@@ -27,10 +27,13 @@ function About() {
           <p>Your watchlist and cart are saved in this browser on this device.
             They remain available after a refresh, but are not synced between
             devices. Clearing browser storage removes these saved selections.</p>
+          <p>Google sign-in is required to open StreamList. Checkout provides
+            a classroom card-management demonstration using fictional details.</p>
           <p>StreamList supports desktop installation in compatible browsers.
             After an initial online visit finishes caching the app, its core
             interface is designed to load offline. New movie searches and
-            online movie images require an internet connection.</p>
+            online movie images require an internet connection. Sign-in and
+            session verification also require a connection to the authentication server.</p>
         </section>
 
         <section className="about-section" aria-labelledby="project-heading">
